@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
+
+
+/*============================================================================================= */
+/* ---------------------------------- Navbar Styling Start----------------------------------- */
+/*============================================================================================= */
+body {
+  font-family: 'Anuphan', sans-serif;
+   margin: 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 50px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+  
+.nav-list li {
+  list-style: none;
+  margin-right: 20px;
+}
+  
+.nav-list li a {
+  color: #333333;
+    text-decoration: none;
+}
+  .nav-list a {
+    color: #333;
+  }
+#check{
+  display: none;
+}
+.barBtn {
+  margin-top: -60px;
+  display: none;
+}
+
+  
+    /* Mobile styles */
+    @media only screen and (max-width: 600px) {
+    .navbar {
+      flex-wrap: wrap;
+    }
+    .barBtn {
+      display: block;
+    }
+    .logo {
+      flex-basis: 100%;
+      text-align: center;
+    }
+    #check{ 
+      display: none;
+    }
+    .menu-list {
+      width: 100%;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .nav-list {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-list li {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .nav-list li a {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      background: transparent;
+      background-color: #dfdfdf;
+      color: #333;
+    }
+
+    .nav-list li a:hover {
+      background-color: #cccbcb;
+    }
+
+    #check:checked ~ .menu-list {
+      display: block;
+    }
+  }
+
+/* --------------------------======= Navbar End =======---------------------------- */
+.main-container {
+  padding: 5%;
+  background-color: whitesmoke;
+}
+.check-out {
+  border-bottom: 3px solid rgb(85, 197, 62);
+}
+.coupon{
+  display: flex;
+  padding: 2%;
+} 
+.coupon span {
+  margin-left: 16px;
+}
+.coupon a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: rgb(70, 175, 49);
+}
+  
+.break {
+  display: flex;
+}
+.billing-details {
+  width: 50%;
+  margin-right: 10%;
+}
+.heading {
+  border-bottom: 1px solid rgb(153, 152, 152);
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.names {
+  display: flex;
+}
+
+.form input {
+  padding: 2.6%;
+  margin-bottom: 15px;
+  width: 95%;
+  border: 1px solid gainsboro;
+  font-size: 1rem;
+  color: #424242;
+}
+.form select{
+  padding: 2.6%;
+  background-color: white;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid gainsboro;
+  font-size: 1rem;
+  color: #333333;
+}
+.form input:focus {
+  outline: none;
+}
+.form label {
+  font-weight: bold;
+}
+.form span{
+  color: red;
+}
+::placeholder{
+  font-size: 1rem;
+}
+.form textarea {
+  padding: 2.6%;
+  margin-bottom: 15px;
+  width: 95%;
+  border: 1px solid gainsboro;
+  font-size: 1rem;
+  color: #424242;
+  resize: none;
+}
+.form textarea:focus{
+  outline: none;
+}
+/* ------------ Responsive Part ------------ */
+@media screen and (max-width: 780px) {
+  .break {
+    display: inline-block;
+  }
+  .main-container {
+    padding: 5%;
+  }
+  .billing-details, .main {
+    width: 100%;
+  }
+  .coupon {
+    flex-wrap: wrap;
+  }
+  .coupon span, .coupon a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+/* ========== Your Order Styling =========== */
+.main {
+  border: 2px solid rgb(190, 190, 190);
+  padding: 3%;
+  /* width: 30%; */
+  height: 450px;
+  float: right;
+}
+.cart-total .sub-total{
+  border-bottom: 1px solid rgb(190, 190, 190);
+  padding: 13px 13px 10px 0;
+  display: flex;
+  color: #424242;
+  font-size: 1.2rem;
+}
+.cart-total .sub-total .pay {
+  float: right;
+  margin-left: 130px;
+}
+.cart-total .sub-total .payment1 {
+  margin-left: 204px;
+}
+.cart-total .sub-total .payment2 {
+  margin-left: 50px;
+}
+.cart-total .sub-total .payment3 {
+  margin-left: 216px;
+}
+.cart-total .sub-total .payment4 {
+  margin-left: 247px;
+}
+.cart-total .sub-total .payment4 {
+  margin-left: 247px;
+}
+#chk {
+  margin-top: 25px;
+}
+#chk1 {
+  margin-top: 20px;
+}
+.place-order {
+  margin-top: 20px
+}
+.place-order button{
+  background-color: rgb(52, 139, 25);
+    border: none;
+    /* height: 45px; */
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 599;
+}
+.place-order a {
+  text-decoration: none;
+  color: white;
+}
+
+/* __________________________________*********---- Footer Start----*************__________________________________ */
+.footer {
+  background-color: rgb(17, 17, 51);
+  color: rgb(184, 179, 179);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+.first-side {
+  width: 70%;
+  padding-left: 4%;
+}
+.first-side img {
+  height: 150px;
+  width: 40%;
+}
+.first-side p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: rgb(226, 224, 224);
+}
+              /*   Second Section */
+.sec-side {
+  width: 45%;
+  /* padding: 20px; */
+  margin-right: -12%;
+}
+.quick-links ul {
+  list-style: none;
+}
+.quick-links a {
+  text-decoration: none;
+  color: rgb(194, 185, 185);
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+.quick-links li {
+  margin-top: 3px;
+}
+.quick-links h2 {
+  margin-left: 37px;
+  font-size: 2rem;
+}
+
+/* Third Section */
+.third-side {
+  width: 50%;
+  /* padding: 20px; */
+}
+.mobile-app{
+  margin-left: 37px;
+}
+.mobile-app h2 {
+  font-size: 1.7rem;
+}
+.mobile-app p {
+  color: rgb(194, 185, 185);
+  font-size: 1.2rem;
+}
+.last a{
+  color: rgb(135, 194, 47);
+}
+
+/* Play-Stores */
+.play-stores {
+  display: flex;
+}
+.play-stores img{
+  margin-left: 37px;
+  height: 40px;
+  border: 1px solid white;
+}
+/* __________________________________*********---- Footer End----***************__________________________________ */
+
+/* ``````````````||||||||||||```````````` Responsive Part of Footer ``````````````||||||||||||````````````*/
+@media screen and (max-width: 800px){
+  .footer {
+      display: inline-block;
+      flex-direction: column;
+      width: 100%;
+  }
+  .first-side img {
+      height: 120px;
+      width: 180px;
+  }
+  .first-side{
+      justify-content: center;
+      padding: 20px;
+  }
+  .first-side p {
+      font-size: 1rem;
+  }
+}

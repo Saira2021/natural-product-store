@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="./images/logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>add to cart</title>
+  </head>
+<body>
+    <!--========================================= Nav Menu Start ===========================-->
+    <div class="navbar">
+      <!-- Logo image -->
+      <div class="logo">
+        <a href="index.html"> <img src="./images/logo.png" alt="Logo" /></a>
+      </div>
+    
+      <input type="checkbox" id="check" />
+      <label class="barBtn" for="check"><i class="fa fa-bars" style="font-size:24px"></i></label>
+    
+      <div class="menu-list">
+        <ul class="nav-list">
+          <li><a href="everything.html">Everything</a></li>
+          <li><a href="grocery.html">Groceries</a></li>
+          <li><a href="juice.html">Juice</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- rate cart-->
+          <li>
+            <a style="color: rgb(64, 207, 64); font-weight: bold" href="cart.html">$0.00</a>
+          </li>
+          <li>
+            <a href="product-details.html"><i class="fa fa-shopping-cart" style="font-size: 20px; color: rgb(64, 207, 64)"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-user" style="font-size: 20px; color: rgb(18, 19, 18)"></i></a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <!--========================================= Nav Menu End ===========================-->
+
+    <!--========================================= Cart Table Start ===========================-->
+<div class="add-cart-container">
+      <div class="add-to-cart">
+        <div class="table">
+          <h1>Cart</h1>
+          <table>
+            <tr>
+              <th></th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size: 15px; text-align: center">
+                  &#10005;
+                </span>
+                <img src="./images/sanitizer.jpg" alt="sanitizer" />
+              </td>
+              <td>Sanitizer</td>
+              <td>£15.00</td>
+              <td><input type="number" /></td>
+              <td>£45.00</td>
+            </tr>
+          </table>
+          <tr>
+            <div class="flex">
+              <div class="input">
+              <input
+                class="cart-total"
+                type="text"
+                placeholder="Coupon Code"
+              />
+            </div>
+            <div class="btn1">
+              <button type="submit">APPLY COUPON</button> 
+            </div>
+            <div class="btn2">
+              <button type="submit">UPDATE CART</button>
+            </div>
+            </div>
+          </tr>
+        </div>
+      </div>
+      <!--========================================= Cart Table End ===========================-->
+      <br />
+<div class="main">
+      <div class="sub-head">
+        <h3>Cart totals</h3>
+      </div>
+      <div class="cart-total">
+        <div class="sub-total">
+          <div class="total">Subtotal</div>
+          <div class="payment1">£45.00</div>
+        </div>
+        <div class="sub-total">
+          <div class="total">Total</div>
+          <div class="payment2">£45.00</div>
+        </div>
+        <div class="proceed-btn">
+            <button type="submit"><a href="checkout.html"> PROCEED TO CHECKOUT </a></button>
+        </div>
+      </div>
+</div>
+</div>
+
+</body>
+</html>

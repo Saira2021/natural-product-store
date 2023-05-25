@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
+
+
+/*============================================================================================= */
+/* ---------------------------------- Index Page Styling Start----------------------------------- */
+/*============================================================================================= */
+body {
+    font-family: 'Anuphan', sans-serif;
+    margin: 0px;
+}
+.container {
+    margin: 0%;
+    padding: 0%;
+}
+/* ---------- Navbar Logo Style Start --------------- */
+/* ---------- Navbar Logo Style Start --------------- */
+body {
+    font-family: 'Anuphan', sans-serif;
+    margin: 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+  
+.logo img {
+    height: 70px;
+    margin-left: 50px;
+}
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  .nav-list li a {
+    color: #333333;
+    text-decoration: none;
+  }
+  .nav-list a {
+    color: #333;
+  }
+#check{
+  display: none;
+}
+.barBtn {
+  margin-top: -60px;
+  display: none;
+}
+
+  
+    /* Mobile styles */
+    @media only screen and (max-width: 600px) {
+    .navbar {
+      flex-wrap: wrap;
+    }
+    .barBtn {
+      display: block;
+    }
+    .logo {
+      flex-basis: 100%;
+      text-align: center;
+    }
+    #check{ 
+      display: none;
+    }
+    .menu-list {
+      width: 100%;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .nav-list {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-list li {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .nav-list li a {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      background: transparent;
+      background-color: #dfdfdf;
+      color: #333;
+    }
+
+    .nav-list li a:hover {
+      background-color: #cccbcb;
+    }
+
+    #check:checked ~ .menu-list {
+      display: block;
+    }
+  }
+
+    
+/*  --------- Hero Section Start ---------- */
+.hero-section {
+    display: flex;
+    /* padding: 40px; */
+    background-color: rgb(247, 247, 247);
+    
+}
+
+.hero-img {
+    padding: 50px;
+}
+
+.hero-img img {
+    height: 500px;
+    width: 600px;
+}
+
+.hero-content {
+    padding: 50px;
+}
+
+.hero-content h4 {
+    font-size: 1.4rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content img {
+    width: 100px;
+    height: 40px;
+}
+.hero-content button {
+    height: 40px;
+    width: 160px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(40, 192, 40);
+}
+.hero-content a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+/* ----- Responsive part of Hero Section */
+@media screen and (max-width: 800px) {
+    .hero-section {
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        margin: 0%;
+        /* padding: 10%; */
+    }
+    .hero-img{
+        margin: 0%;
+        padding: 5%;
+    }
+    .hero-img img  {
+        height: 400px;
+        width: 100%;
+        /* padding: 10%; */
+    }
+    .hero-content{
+        /* align-items: center; */
+        /* padding: 10px; */
+        text-align: center;
+    }
+    .hero-content p{
+        text-align: center;
+        padding: 10px;
+        margin-right: 25px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    } 
+}
+
+/* .bg-img img {
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+    background-image: linear-gradient(160deg,var(--e-global-color-astglobalcolor5 ) 0%,var(--e-global-color-astglobalcolor4 ) 100%);
+} */
+/* .hero-content {
+    position: relative;
+}
+.bg-img {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+} */
+
+
+/*  --------- Hero Section End ---------- */
+
+/* --------------------  Benefits Section Start -------------- */
+.above {
+    padding: 3% 3% 3% 3%;
+    width: 94%;
+    display: flex;
+    background-color: rgb(34, 34, 34);
+    position: relative;
+}
+
+.above .benefits {
+    padding: 20px;
+    margin-top: 14px;
+    margin-right: 13px;
+    /* justify-content: space-around; */
+    width: 46%;
+    height: 70px;
+    color: rgb(237, 239, 241);
+    background-color: rgb(78, 74, 74);
+    position: relative;
+}
+
+.above .benefits h2 {
+    position: absolute;
+    top: -4px;
+    left: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.above .benefits p {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.above .benefits i {
+    position: absolute;
+}
+
+.card-body .checked {
+    color: orange;
+}
+
+/* ---- Responsiveness of Benefits Section ---- */
+@media screen and (max-width: 895px) {
+    .above {
+        display: inline-block;
+        width: 85%;
+        /* padding: 10%; */
+        padding: 7.5%;
+    }
+    .above .benefits {
+        display: block;
+        height: 50px;
+        width: 94%;
+    }
+}
+
+/* --------------------  Benefits Section End -------------- */
+
+/* -------------============ Best Selling Products Styling Start ===============----------- */
+
+.sell-products {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+.leaf-img {
+    text-align: center;
+    align-items: center;
+}
+
+.leaf-img img {
+    height: 50px;
+}
+.sell-products h1{
+    margin: 10px;
+    text-align: center;
+}
+.product-cards {
+    display: flex;
+    padding: 3%;
+    width: 100%;
+}
+
+.product-cards .card {
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    /* box-shadow: 0 0 6px rgb(218, 216, 216); */
+    border-radius: 8px;
+}
+.product-cards .card p {
+    color: rgb(88, 83, 83);
+}
+.product-cards .card a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+}
+
+/* ----- Responsiveness of Selling Products ------ */
+@media screen and (max-width: 800px) {
+    .sell-products {
+        justify-content: center;
+    }
+    .leaf-img h1 {
+        text-align: center;
+    }
+    .product-cards {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-cards .card {
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+/* -------------============ Selling Products Styling End ===============----------- */
+
+/* `````````````````````````````   Shop Now Section Start `````````````````````````````````` */
+.shop-now {
+    position: relative;
+    background-color: rgb(243, 242, 242);
+    padding: 2%;
+}
+.shop-now .single-leaf img {
+    height: 70px;
+    width: 160px;
+}
+
+.shop-now .single-leaf {
+    position: absolute;
+    top: -34px;
+    left: 630px;
+}
+
+.shopping-cards {
+    display: flex;
+    top: 90px;
+}
+.shopping-cards .shop-card {
+    /* margin: 9px; */
+    padding: 4%;
+}
+.shop-card img {
+    height: 95%;
+    width: 350px;
+    border-radius: 15px;
+}
+.shop-card {
+    position: relative;
+    
+}
+.shop-card .body {
+    position: absolute;
+    top: 30px;
+    padding: 35px;
+    background-color: #3a3636;
+    background: transparent;
+}
+.shop-card .body button{
+    background-color: rgb(38, 177, 38);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 170px;
+}
+.shop-card .body a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/* ---- Responsive Part of Shop Now ---- */
+@media screen and (max-width: 895px) {
+    .shopping-cards{
+        display: inline-block;
+    }
+    .shop-now {
+        position: relative;
+        background-color: rgb(250, 246, 246);
+        padding-top: 15%;
+    }
+    .shop-now .single-leaf img {
+        height: 60px;
+        width: 140px;
+    }
+    
+    .shop-now .single-leaf {
+        position: absolute;
+        top: -34px;
+        left: 100px;
+    }
+    .shop-card img {
+        height: 350px;
+        width: 100%;
+    }
+    
+    
+
+}
+/* `````````````````````````````   Shop Now Section End `````````````````````````````````` */
+
+
+/* ---------------------Dark Heading Style Start ------------------- */
+
+.dark-heading {
+    display: flex;
+    color: white;
+    padding: 40px;
+    background-color: rgb(39, 39, 39);
+    width: 94% !important;
+}
+.dark-heading h1 {
+    float: left;
+    font-size: 1.3rem !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.dark-heading button {
+    height: 45px;
+    width: 180px;
+    /* margin-top: 30px; */
+    margin-left: 190px;
+    border: none;
+    background-color: rgb(38, 177, 38);
+    border-radius: 5px;
+}
+.dark-heading a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.notice {
+    text-align: center;
+    background-color: #ececec;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.notice h2 {
+    color: rgb(46, 43, 43);
+}
+/* ---- Responsive Part ---- */
+@media screen and (max-width: 860px) {
+    }
+    .dark-heading {
+        display: inline-block;
+        color: white;
+        /* width: 78% !important; */
+    }
+    .dark-heading button {
+        height: 45px;
+        width: 150px;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+    .dark-heading h1 {
+        font-size: 1.3rem;
+    }
+/* ---------------------Dark Heading Style End ------------------- */
+
+
+/*--++++++++++++++===============----------- Trending Products Start -----------===============++++++++++++++ */
+.customer-reviews {
+    background-color: rgb(252, 252, 252);
+    padding: 10px;
+}
+.head {
+    align-items: center;
+    text-align: center;
+}
+.head img {
+    height: 50px;
+    margin-bottom: 50px;
+}
+.all-cards {
+    display: flex;
+    padding: 2%;
+}
+
+.all-cards .para-card {
+    width: 30% !important;
+    height: 300px;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgb(180, 170, 170);
+    margin: 25px;
+}
+                                /* Center Image Card */
+.img-on img {
+    position: absolute;
+    height: 420px;
+    width: 200%;
+    top: -30px;
+    border-radius: 7px;
+}
+
+.img-card {
+    width: 200%;
+    position: relative;
+    /* display: block !important; */
+} 
+.img-text {
+    position: absolute;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(39, 34, 34, 0.356);
+    height: 345px;
+    width: 63%;
+    /* display: block !important; */
+}
+.img-text button {
+    background-color: rgb(38, 177, 38);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 170px;
+}
+.img-text a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/* ---------Responsive Part of customer reviews ---------- */
+@media screen and (max-width: 800px){
+    .all-cards {
+        display: inline-block;
+    }
+}
+.all-cards .para-card {
+    width: 70% !important;
+}
+.img-on img {
+    position: absolute;
+    height: 420px;
+    width: 70%;
+    top: -30px;
+    border-radius: 7px;
+}
+.img-card {
+    display: none;
+   
+} 
+.img-text {
+    position: absolute;
+    display: none;
+}
+
+ 
+
+
+
+
+/*--++++++++++++++===============----------- Customer Reviews End -----------===============++++++++++++++ */
+
+/* __________________________________ Registered Companies Logos Start __________________________________ */
+.reg-companies {
+    padding: 20px;
+    background-color: rgb(228, 228, 228);
+}
+
+.site-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-logo img {
+    height: 50px;
+    width: 110px;
+
+}
+
+/* ---- Responsiveness of Registered Companies ---- */
+@media screen and (max-width: 800px) {
+    .site-logo{
+        display: inline-block; 
+        padding-left: 20%;
+    }
+    .site-logo img{
+        height: 50px;
+    }
+}
+/* __________________________________ Registered Companies Logos End   __________________________________ */
+
+
+
+/* __________________________________*********---- Footer Start----*************__________________________________ */
+.footer {
+    background-color: rgb(17, 17, 51);
+    color: rgb(184, 179, 179);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+.first-side {
+    width: 70%;
+    padding-left: 4%;
+}
+.first-side img {
+    height: 150px;
+    width: 40%;
+}
+.first-side p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(226, 224, 224);
+}
+                /*   Second Section */
+.sec-side {
+    width: 45%;
+    /* padding: 20px; */
+    margin-right: -12%;
+}
+.quick-links ul {
+    list-style: none;
+}
+.quick-links a {
+    text-decoration: none;
+    color: rgb(194, 185, 185);
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+.quick-links li {
+    margin-top: 3px;
+}
+.quick-links h2 {
+    margin-left: 37px;
+    font-size: 2rem;
+}
+
+/* Third Section */
+.third-side {
+    width: 50%;
+    /* padding: 20px; */
+}
+.mobile-app{
+    margin-left: 37px;
+}
+.mobile-app h2 {
+    font-size: 1.7rem;
+}
+.mobile-app p {
+    color: rgb(194, 185, 185);
+    font-size: 1.2rem;
+}
+.last a{
+    color: rgb(135, 194, 47);
+}
+
+/* Play-Stores */
+.play-stores {
+    display: flex;
+}
+.play-stores img{
+    margin-left: 37px;
+    height: 40px;
+    border: 1px solid white;
+}
+/* __________________________________*********---- Footer End----***************__________________________________ */
+
+/* ``````````````||||||||||||```````````` Responsive Part of index page Start ``````````````||||||||||||````````````*/
+@media screen and (max-width: 800px){
+    .footer {
+        display: inline-block;
+        flex-direction: column;
+        width: 100%;
+    }
+    .first-side img {
+        height: 120px;
+        width: 180px;
+    }
+    .first-side{
+        justify-content: center;
+        padding: 20px;
+    }
+    .first-side p {
+        font-size: 1rem;
+    }
+}
+/*    ================= Footer Style End ================= */
+
+
+/* ``````````````||||||||||||```````````` Responsive Part of index page End ``````````````||||||||||||````````````*/
+
+
+
+/*============================================================================================= */
+/* ---------------------------------- Index Page Styling End----------------------------------- */
+/*============================================================================================= */
+
+
+
+
+/*============================================================================================= */
+/* ----------------------------Product Details Page Styling Start------------------------------ */
+/*============================================================================================= */
+
+.container {
+    background-color: whitesmoke;
+    padding: 5%;
+}
+.prod-details {
+    display: flex;
+}
+
+.side-pic img {
+    height: 60%;
+    width: 85%;
+    border-radius: 4px;
+}
+.price {
+    display: flex;
+    margin-top: -13px;
+}
+.cart-details {
+    margin-top: -20px;
+    /* padding: 2%; */
+}
+.cart-details p {
+    height: 70px;
+}
+.cart-details .cntnt {
+    margin-top: -55px;
+}
+.prod-details .btns input{
+    height: 30px;
+    width: 50px;
+    font-size: 1.1rem;
+}
+.btn1 input:focus{
+    outline: none;
+}
+.prod-details .btns button{
+    padding: 10px;
+    width: 300px;
+    border: none;
+    background-color: rgb(104, 161, 19);
+    border-radius: 5px;
+}
+.prod-details .btns a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+.grn-clr {
+    color: rgb(104, 161, 19);
+    text-decoration: none;
+}
+.cart-menu ul {
+    display: flex;
+    list-style: none;
+    margin-left: -37px;
+}
+.cart-menu a {
+    text-decoration: none;
+}
+/* ----- Responsiveness of Above Section -------- */
+@media screen and (max-width: 760px) {
+    .prod-details {
+        display: inline-block;
+    }
+    .cart-details p {
+        height: 90px;
+    }
+    .cart-details{
+        justify-content: center;
+        align-items: center;
+    }
+    .prod-details .btns button{
+        padding: 13px;
+        width: 200px;
+        margin-left: 10px;
+    }
+    .desc .para {
+        font-size: 0.9rem;
+        margin-bottom: -30px;
+    }
+    .side-pic img {
+        width: 100%;
+        border-radius: 4px;
+    }
+    .cart-details .cntnt {
+        font-size: 0.9rem;
+    }
+}
+/* -------- Related Product Details Menu Start -------------- */
+.cart-menu ul{
+    list-style: none;
+    
+}
+.cart-menu ul li{
+    margin: -6px 15px 0 0;
+}
+.cart-menu ul a{
+    color: black;
+    font-weight: 800;
+
+}
+.related-products {
+    display: flex;
+
+}
+.related-products .card {
+    margin: 15px;
+    text-align: center;
+    align-items: center;
+    /* box-shadow: 0 0 6px rgb(180, 170, 170); */
+    border-radius: 8px;
+}
+.related-products .card p {
+    color: rgb(88, 83, 83);
+}
+.related-products .card a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+}
+
+.other-products h1{
+    /* margin-top: 80px;
+    margin-bottom: -30px; */
+    margin: 80px 0 -30px 14px;
+    font-size: 2.7rem;
+}
+.tiny-circle {
+    position: relative;
+    background-color: rgb(124, 202, 124);
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    left: 277px;
+}
+.tiny-circle p {
+    /* justify-content: center; */
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    left: 8px;
+    top: -2px;
+    
+}
+@media screen and (max-width: 860px) {
+    .other-products h1{
+        margin: 80px 0 -30px 14px;
+        font-size: 2rem;
+    }
+    .related-products{
+        display: inline-block;
+    }
+}
+/* -------- Related Product Details Menu End -------------- */
+
+/*============================================================================================= */
+/* ----------------------------Product Details Page Styling End  ------------------------------ */
+/*============================================================================================= */
+
+
+
+/*============================================================================================= */
+/* --------------------------------------- Add to Cart Start ---------------------------------- */
+/*============================================================================================= */
+
+.add-cart-container {
+    background-color: whitesmoke;
+    padding: 5%;
+}
+.table table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #cecdcd;
+}
+.table table td, .table table th {
+    border-bottom: 1px solid #cecdcd;
+    width: 50px;
+}
+.table table tr td span {
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid rgb(59, 59, 59);
+}
+.table table tr td img {
+    height: 90px;
+    width: 70px;
+    margin-left: 50px;
+}
+.table table input{
+    width: 45px;
+    height: 25px;
+    color: rgb(104, 101, 101);
+    font-size: 1rem;
+}
+.table table input:focus{
+    outline: none;
+}
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ffffff;
+}
+.flex {
+    border: 1px solid #cecdcd;
+    border-top: none;
+}
+.flex {
+    display: flex;
+    padding: 20px;
+}
+.flex .input input{
+    width: 300px;
+    height: 25px;
+    color: rgb(104, 101, 101);
+    font-size: 1rem;
+}
+.flex .input input:focus {
+    outline: none;
+}
+.flex .btn1 button{
+    background-color: rgb(52, 139, 25);
+    border: none;
+    color: white;
+    /* height: 45px; */
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 170px;
+    font-size: 0.9rem;
+    font-weight: 599;
+    margin: -6.5px 10px;
+} 
+.flex .btn2 button {
+    background-color: rgb(52, 139, 25);
+    border: none;
+    color: white;
+    /* height: 45px; */
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 599;
+    width: 170px;
+    margin-left: 470px;
+    font-size: 0.9rem;
+}
+/* ==== Responsive Part ==== */
+@media screen and (max-width: 867px) {
+    .add-cart-container {
+      padding: 30px;
+    }
+    
+    .table table tr td img {
+      height: 70px;
+      width: 50px;
+      margin-left: 20px;
+    }
+    
+    .table table input {
+      width: 30px;
+      height: 20px;
+      font-size: 0.8rem;
+    }
+    
+    .flex {
+      display: block;
+      padding: 10px;
+    }
+    
+    .flex .input input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .flex .btn1 button {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+    
+    .flex .btn2 button {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+
+/* -------================= Cart Total Styling Start ============------------- */
+
+.sub-head{
+    width: 50%;
+    border: 1px solid #cecdcd;
+    float: right;
+    background-color: white;
+}
+
+.sub-head h3{
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    color: #292929;
+    border-bottom: none;
+}
+
+.cart-total {
+    width: 50%;
+    border: 1px solid #cecdcd;
+    float: right;
+}
+
+.sub-total{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #cecdcd;
+    color: #333;
+}
+
+.sub-total .payment1{
+    margin-left: 150px;
+}
+
+.sub-total .payment2{
+    margin-left: 175px;
+}
+
+.proceed-btn {
+    padding: 20px;
+}
+
+.proceed-btn button {
+    background-color: rgb(52, 139, 25);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 599;
+    width: 100%;
+    font-size: 1rem;
+}
+.proceed-btn button a{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+
+.sub-head {
+    width: 100%;
+    float: none;
+}
+
+.cart-total {
+    width: 100%;
+    float: none;
+}
+
+.sub-total {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sub-total .payment1, .sub-total .payment2 {
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.proceed-btn button {
+    font-size: 0.9rem;
+}
+
+}
